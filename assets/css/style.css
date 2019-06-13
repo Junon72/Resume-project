@@ -1,0 +1,20 @@
+/* Font from Google Fonts - Roboto - select and import - copy the link 
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+after added fontsizes and Exo font with the same parameters - using pipe | separator */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+/* setting margins in header */
+header {
+    margin: 0;
+    
+}
+
+.logo {
+    background: url("../images/rosie.jpg"); /* ".." for the path ! ! */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
