@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,30 +13,53 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Rosie</title>
 </head>
+
 <body>
     <header>
-       <div class="row">
-           <!-- rule of three division: first container 4/12, second container 8/12 -->
-           <a class="col-md-4 logo" href="index.html"> <!-- changed the div to a - boostrap first child needss to be a rule!! and added logo for the image/logo-->
-               
-           </a>
-           <div class="col-md-8">
-               <div class="row">
-                   <div class="col heading"> <!-- whne no width specified, the collum will fill the full left over space -->
-                       <h1 class="name">Rosie Odenkirk</h1>
-                       <h2 class="title">Full Stack Developer</h2>
-                       
-                   </div>
-               </div>
-           </div>
-           
-       </div>
+        <div class="row no-gutters"> <!-- no-gutters class added to remove the default padding (gutters) in boostrap style -->
+            <!-- rule of three division: first container 4/12, second container 8/12 -->
+            <a class="col-md-4 logo" href="index.html">
+                <!-- changed the div to a - boostrap first child needss to be a rule!! and added logo for the image/logo-->
+            </a>
+            <div class="col-md-8">
+                <div class="row no-gutters bg-color-name-title"> <!-- no-gutters class added to remove the default padding (gutters) in boostrap style -->
+                    <!-- copy to css -->
+                    <div class="col heading">
+                        <!-- when no width specified, the collum will fill the full left over space -->
+                        <h1 class="name">Rosie Odenkirk</h1>
+                        <h2 class="title">Full Stack Developer</h2>
+                    </div>
+                </div>
+                <div class="row no-gutters"> <!-- no-gutters class added to remove the default padding (gutters) in boostrap style -->
+                    <div class="col">
+                        <ul id="nav" class="list-inline menucontainer"> <!-- provided by Bootstrap - stops the list displaying vertically, but shows it horizontally instead --> 
+                        <!-- added menucontainer class to removethe space from between the li items - CSS HACK! -->
+                            <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item">
+                                <a href="#"><i class="fa fa-home" aria-hidden="true"></i><sapn>Home</sapn></a> <!-- Font Awesome recommneds using <i> element | Font Awesome class is "fa" | ara-hidden hides the element form the document -->
+                            </li>
+                            <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item">
+                                <a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i><sapn>Resume</sapn></a>
+                            </li>
+                            <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item">
+                                <a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i><sapn>Contact</sapn></a> <!-- comment-o is an empty speech bubble -->
+                            </li>
+                            <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item">
+                                <a href="#"><i class="fa fa-download" aria-hidden="true"></i><sapn>Download</sapn></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
     </header>
     <section>
-        
+
     </section>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
