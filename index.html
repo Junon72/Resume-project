@@ -17,13 +17,15 @@
 
 <body>
     <header>
-        <div class="row no-gutters"> <!-- no-gutters class added to remove the default padding (gutters) in boostrap style -->
+        <div class="row no-gutters">
+            <!-- no-gutters class added to remove the default padding (gutters) in boostrap style -->
             <!-- rule of three division: first container 4/12, second container 8/12 -->
             <a class="col-md-4 logo" href="index.html">
                 <!-- changed the div to a - boostrap first child needss to be a rule!! and added logo for the image/logo-->
             </a>
             <div class="col-md-8">
-                <div class="row no-gutters bg-color-name-title"> <!-- no-gutters class added to remove the default padding (gutters) in boostrap style -->
+                <div class="row no-gutters bg-color-name-title">
+                    <!-- no-gutters class added to remove the default padding (gutters) in boostrap style -->
                     <!-- copy to css -->
                     <div class="col heading">
                         <!-- when no width specified, the collum will fill the full left over space -->
@@ -31,18 +33,23 @@
                         <h2 class="title">Full Stack Developer</h2>
                     </div>
                 </div>
-                <div class="row no-gutters"> <!-- no-gutters class added to remove the default padding (gutters) in boostrap style -->
+                <div class="row no-gutters">
+                    <!-- no-gutters class added to remove the default padding (gutters) in boostrap style -->
                     <div class="col">
-                        <ul id="nav" class="list-inline menucontainer"> <!-- provided by Bootstrap - stops the list displaying vertically, but shows it horizontally instead --> 
-                        <!-- added menucontainer class to removethe space from between the li items - CSS HACK! -->
-                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-home menuitem"> <!-- added menuitem class to style the each menuitem --> 
-                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a> <!-- Font Awesome recommneds using <i> element | Font Awesome class is "fa" | ara-hidden hides the element form the document -->
+                        <ul id="nav" class="list-inline menucontainer">
+                            <!-- provided by Bootstrap - stops the list displaying vertically, but shows it horizontally instead -->
+                            <!-- added menucontainer class to removethe space from between the li items - CSS HACK! -->
+                            <li class="col-6 col-sm-3 list-inline-item ui-menu-color-home menuitem">
+                                <!-- added menuitem class to style the each menuitem -->
+                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                                <!-- Font Awesome recommneds using <i> element | Font Awesome class is "fa" | ara-hidden hides the element form the document -->
                             </li>
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-resume menuitem">
                                 <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
                             </li>
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-contact menuitem">
-                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a> <!-- comment-o is an empty speech bubble -->
+                                <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-comment-o" aria-hidden="true"></i><span>Contact</span></a>
+                                <!-- comment-o is an empty speech bubble -->
                             </li>
                             <li class="col-6 col-sm-3 list-inline-item ui-menu-color-download menuitem">
                                 <a href="#" class="hvr-sweep-to-bottom"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
@@ -60,14 +67,26 @@
     </section>
     <footer class="container-fluid">
         <div class="row">
-            <div class="col-sm-4"> <!-- no mobile option provided - the layout should take up the full width -->
-                <h5>About</h5>
+            <div class="col-sm-4">
+                <!-- no mobile option provided - the layout should take up the full width -->
+                <h5 class="uppercase general-sub">About</h5>
+                <p class="inline-block">
+                    Full Stack Web Developer. Skilled in everything from HTML to Heroku. The capacity for structural and design thinking.
+                </p>
             </div>
             <div class="col-sm-4">
-                <h5>Download</h5>
+                <h5 class="uppercase general-sub">Download</h5>
+                <p class="inline-block">
+                    Need a printable version of  my  CV?
+                    Download it from here.
+                    <a href="#" target="_blank" class="cv-pdf"> 
+                        <i class="fa fa-download" aria-hidden="true"></i> <!-- aria-hidden to hide the fa fa-download icon -->
+                        <span class="sr-only">Downlod link.</span></span> <!-- sr-only means screen readers only-->
+                    </a>
+                </p>
             </div>
             <div class="col-sm-4">
-                <h5>Social</h5>
+                <h5 class="uppercase general-sub">Social</h5>
             </div>
         </div>
 
