@@ -74,3 +74,34 @@ header {
     padding: 0;
 } /* this overrides the manucontainer font-size for their content - ! #nav id used in this case*/
 
+.menuitem {
+    height: 120px;
+    text-align: center;
+    padding: 0;
+} /* rufly third of the overall section hight - image height was 360px */
+
+.menuitem a {
+    width: 100%;
+    text-decoration: none;
+    height: 120px;
+    color: #fff;
+}
+
+.menuitem a i {
+    padding-top: 22px;
+    display: block;
+    color: #fafafa;
+    font-size: 26px;
+    
+}
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
