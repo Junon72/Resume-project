@@ -67,8 +67,13 @@ header {
 
 .menucontainer {
     font-size: 0;
+
 } /* this is to remove the space between the menu items, which normally would have one space gap between them */ 
 
+#nav {
+    margin: 0;
+    
+}
 #nav li {
     font-size: 14px;
     padding: 0;
