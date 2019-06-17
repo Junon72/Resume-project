@@ -1,39 +1,65 @@
 /* Font from Google Fonts - Roboto - select and import - copy the link 
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 after added fontsizes and Exo font with the same parameters - using pipe | separator */
+
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 /* setting margins in header */
-
 
 /* ------------------------------------------------------------------------------------------ Colours*/
 
 .bg-color-name-title {
-    background-color: #676767; /*dark chargoil color */
+    background-color: #676767;
+    /*dark chargoil color */
 }
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
+
 .ui-menu-color-resume {
     background-color: #9b59b6;
 }
+
 .ui-menu-color-contact {
     background-color: #3498db;
 }
+
 .ui-menu-color-download {
     background-color: #525252;
 }
 
+/* ------------------------------------------------------------------------------------------ Special padiings/margins/text */
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.generl-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
 /* ------------------------------------------------------------------------------------------ Heading */
+
 header {
     margin: 0;
-    
+
 }
+
 .heading {
     margin-left: 50px;
 }
 
 .logo {
-    background: url("../images/rosie.jpg"); /* ".." for the path ! ! */
+    background: url("../images/rosie.jpg");
+    /* ".." for the path ! ! */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,6 +78,7 @@ header {
     margin-top: 50px;
     color: #fff;
 }
+
 .title {
     font-family: "Roboto", sans-serif;
     font-weight: 200;
@@ -62,28 +89,35 @@ header {
 }
 
 .list-inline-item:not(:last-child) {
-    margin:0;
+    margin: 0;
 }
 
 .menucontainer {
     font-size: 0;
 
-} /* this is to remove the space between the menu items, which normally would have one space gap between them */ 
+}
+
+/* this is to remove the space between the menu items, which normally would have one space gap between them */
 
 #nav {
     margin: 0;
-    
+
 }
+
 #nav li {
     font-size: 14px;
     padding: 0;
-} /* this overrides the manucontainer font-size for their content - ! #nav id used in this case*/
+}
+
+/* this overrides the manucontainer font-size for their content - ! #nav id used in this case*/
 
 .menuitem {
     height: 120px;
     text-align: center;
     padding: 0;
-} /* rufly third of the overall section hight - image height was 360px */
+}
+
+/* rufly third of the overall section hight - image height was 360px */
 
 .menuitem a {
     width: 100%;
@@ -97,7 +131,7 @@ header {
     display: block;
     color: #fafafa;
     font-size: 26px;
-    
+
 }
 
 .menuitem span {
@@ -116,4 +150,6 @@ header {
 .hvr-sweep-to-bottom:before {
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
-} /* using a pseudo element "before" 
+}
+
+/* using a pseudo element "before" */
