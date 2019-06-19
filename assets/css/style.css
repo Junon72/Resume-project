@@ -28,13 +28,14 @@ after added fontsizes and Exo font with the same parameters - using pipe | separ
     background-color: #525252;
 }
 
-.bg-color-three-reaons   {
+.bg-color-three-reaons {
     background-color: #fff;
 }
 
 .bg-color-personal-info {
     background-color: #f4f4f4;
 }
+
 /* ------------------------------------------------------------------------------------------ Special paddings/margins/text */
 
 h1,
@@ -61,13 +62,14 @@ h4 {
 
 .row-table {
     display: table;
-    
+
 }
 
 .section-column {
     display: table-cell;
     padding: 0 30px 30px;
-    float: none; /*all boostrap elemetns have a default float - change to none */
+    float: none;
+    /*all boostrap elemetns have a default float - change to none */
 }
 
 .section-heading {
@@ -75,8 +77,9 @@ h4 {
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
-    
+
 }
+
 /* ------------------------------------------------------------------------------------------ Heading */
 
 header {
@@ -219,7 +222,8 @@ footer {
     width: 32px;
     height: 32px;
     padding: 12px 0;
-    border-radius: 50%; /*makes a circle*/
+    border-radius: 50%;
+    /*makes a circle*/
     font-size: 13px;
     line-height: 7px;
     text-align: center;
@@ -232,7 +236,7 @@ footer {
 }
 
 .social-links li a i:hover {
-     background: #e84610;
+    background: #e84610;
 }
 
 #footer-details {
@@ -240,6 +244,7 @@ footer {
 }
 
 /* ------------------------------------------------------------------------------------------ Three reasons*/
+
 .three-reasons-icon {
     font-size: 26px;
     color: #e67e22;
@@ -247,4 +252,41 @@ footer {
 
 .three-reasons-headin {
     margin-bottom: 15px;
+}
+
+/* ------------------------------------------------------------------------------------------ Personal Info*/
+
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+    /* prevents the items from appearing next to each other if using floats */
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
+    display: inline-block;
+    /* block sets the items next to each other and occupies max space available - inline-block sets the items next to each other!*/
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
+}
+
+.personal-info-item .key {
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    position: relative; /*position is now relative to its presessore*/
+    width: 60%;
 }
