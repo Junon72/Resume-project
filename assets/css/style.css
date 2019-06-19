@@ -28,6 +28,13 @@ after added fontsizes and Exo font with the same parameters - using pipe | separ
     background-color: #525252;
 }
 
+.bg-color-three-reaons   {
+    background-color: #fff;
+}
+
+.bg-color-personal-info {
+    background-color: #f4f4f4;
+}
 /* ------------------------------------------------------------------------------------------ Special paddings/margins/text */
 
 h1,
@@ -52,6 +59,24 @@ h4 {
 
 }
 
+.row-table {
+    display: table;
+    
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none; /*all boostrap elemetns have a default float - change to none */
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    
+}
 /* ------------------------------------------------------------------------------------------ Heading */
 
 header {
@@ -212,4 +237,14 @@ footer {
 
 #footer-details {
     padding: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------ Three reasons*/
+.three-reasons-icon {
+    font-size: 26px;
+    color: #e67e22;
+}
+
+.three-reasons-headin {
+    margin-bottom: 15px;
 }
